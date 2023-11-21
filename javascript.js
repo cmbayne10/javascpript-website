@@ -1,6 +1,6 @@
 function onClick(inputName) {
     document.getElementById("insertedName").innerHTML = "thanks, I'm now overlord of the world HA HA HA";
-    const users = [{name: 'Sally'}, {name: 'Jerome'}]
+    const user = {name: bob}
     console.log ('First name in list -----',names[0]);
 
     const names = ['Sally', 'Jerome']
