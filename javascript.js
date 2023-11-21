@@ -1,10 +1,8 @@
 function onClick(inputName) {
     document.getElementById("insertedName").innerHTML = "thanks, I'm now overlord of the world HA HA HA";
-    const user = {name: bob}
-    console.log ('First name in list -----',names[0]);
-
     const names = ['Sally', 'Jerome']
     const users = [{name: 'Sally'}, {name: 'Jerome'}]
+    console.log ('First name in list -----',names[0]);
 
     console.log ('Second name in list of objects -----',users[1].name);
     const url = 'https://pokeai.co/api/v2/pokemon';
