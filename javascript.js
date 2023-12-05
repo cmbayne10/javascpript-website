@@ -3,8 +3,10 @@ function onPress(inputName) {
     $.get(url,function(data, status){
         if (status === 'success') {
             console.log(data);
-            const pokemonNames = data.results.map(pokemon => pokemon.name) 
-            document.getElementById("displayedText").innerHTML = pokemonNames.join('\n');
+            const pokemonNames = data.results.map(pokemon =>  {
+            return '<h2>' + pokemon.name + '</h2>'
+        }); 
+     document.getElementById("displayedText").innerHTML = pokemonNames.join('\n');
         }
     }); 
    
