@@ -9,15 +9,12 @@ function onPress(inputName) {
   });
 }
 
-function addNamesToHTML(data) {
-  data.results.forEach((pokemon) => {
+const addNamesToHTML = (data) => {
+  const pokemonNames = data.results.map((pokemon) => {
     const h2Element = document.createElement("h2");
     h2Element.innerHTML = pokemon.name;
     console.log("Name with H2 tag: ", h2Element);
-    document.getElementById("displayedText").append(h2Element);
+    return h2Element;
   });
-}
-
-const showNames = pokemon => {
-  return pokemon.name;
+  $("#displayedText").html(pokemonNames);
 };
