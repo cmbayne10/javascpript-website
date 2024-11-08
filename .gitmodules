@@ -1,0 +1,3 @@
+[submodule "javascpript-website"]
+	path = javascpript-website
+	url = git@github.com:cmbayne10/javascpript-website.git
